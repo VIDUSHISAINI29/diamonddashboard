@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="grand_container flex full_width">
+
+        <div class="left_side_bar flex items-center bgColor flex-col">
+
+            <div class="logo_div cursor-pointer flex items-center justify-center flex-col full_width">
+                <img class="logo " src="Diamond_assets/asset 1.svg" alt="">
+            </div>
+
+            <div class="left_bar_items full_width flex items-center justify-start flex-col">
+                <span class="cursor-pointer home"><img src="Diamond_assets/home.svg" alt=""></span>
+                <span class="cursor-pointer gallery"><img src="Diamond_assets/gallery.svg" alt=""></span>
+                <span class="cursor-pointer star"><img src="Diamond_assets/star.svg" alt=""></span>
+                <span class="cursor-pointer mask"><img src="Diamond_assets/mask.svg" alt=""></span>
+                <span class="cursor-pointer compass"><img src="Diamond_assets/compass.svg" alt=""></span>
+                <span class="cursor-pointer toolbox"><img src="Diamond_assets/toolbox.svg" alt=""></span>
+                <span class="cursor-pointer wallet"><img src="Diamond_assets/wallet.svg" alt=""></span>
+                <span class="cursor-pointer profile"><img src="Diamond_assets/profile.svg" alt=""></span>
+                <span class="cursor-pointer menu"><img src="Diamond_assets/hamburger.svg" alt=""></span>
+                <span class="cursor-pointer download"><img src="Diamond_assets/download.svg" alt=""></span>
+            </div>
+
+        </div>
+
+
+        <div class="right_container flex-col">
+
+            <div class="homebar  bgColorWhite full_width flex">
+                <div class="homebar_left flex half_width justify-start items-center ">
+                    <span class=" fontSize">E-COMMERCE DASHBOARD</span>
+                </div>
+                <div class="homebar_right flex half_width justify-end items-center">
+                    <span class="p-1 border_radius homebar_hover">
+                        <img src="Diamond_assets/lens.svg" alt=""></img>
+                    </span>
+                    <span class="p-1 border_radius homebar_hover">
+                        <img src="Diamond_assets/bell.svg" alt=""></img>
+                    </span>
+                    <div class="home_right_img_name flex ">
+                        <span class=" border_radius homebar_hover ">
+                            <img class="homebar_img" src="Diamond_assets/asset 2.jpeg" alt=""></img>
+                        </span>
+                        <span class="p-1 radius_customize homebar_hover">Amelia Stone</span>
+
+                    </div>
+
+                    <span class="p-1  border_radius right_menu_color homebar_hover">
+                        <img src="Diamond_assets/hamburger_right.svg" alt=""></img>
+                    </span>
+                </div>
+            </div>
+            <div class="hero_section full_width">
+                <div class="color_boxes_row  flex w-full justify-between items-center p-8">
+                    <div class="bluebox flex-col less_quarter_width border_radius px-8 py-3 shadow-md bgColorWhite">
+                        <div class="box_head flex items-center">
+                            <span class="p-1 cart2 border_radius mr-2"><img src="Diamond_assets/cart.svg" alt=""></span>
+                            <span class=" bluebox_head_font text-lg">Order</span>
+                        </div>
+
+                        <div class="bluebox_data flex py-5 full_width">
+                            <div class="boxdata_left flex flex-col half_width">
+                                <span class="text-2xl text-center">640</span>
+                                <span class="text-base text-center">Pending</span>
+                            </div>
+                            <div class="boxdata_right  flex flex-col half_width ">
+                                <span class="text-2xl text-center">1420</span>
+                                <span class="text-base text-center">Completed</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="purplebox flex-col  less_quarter_width border_radius px-8 py-3 shadow-md bgColorWhite">
+                        <div class="box_head flex items-center">
+                            <span class="p-1 dollar border_radius mr-2"><img src="Diamond_assets/dollar.svg"
+                                    alt=""></span>
+                            <span class=" bluebox_head_font2 text-lg">revenue</span>
+                        </div>
+
+                        <div class="bluebox_data flex py-5 full_width">
+                            <div class="boxdata_left flex flex-col half_width">
+                                <span class="text-2xl text-center">$2,100</span>
+                                <span class="text-base text-center">Expenses</span>
+                            </div>
+                            <div class="boxdata_right flex flex-col half_width ">
+                                <span class="text-2xl text-center">$9,640</span>
+                                <span class="text-base text-center">Income</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="greenbox flex-col less_quarter_width border_radius px-8 py-3 shadow-md bgColorWhite">
+                        <div class="box_head flex items-center">
+                            <span class="p-1 customer_people border_radius mr-2"><img
+                                    src="Diamond_assets/customer_people.svg" alt=""></span>
+                            <span class=" bluebox_head_font3 text-lg">Customers</span>
+                        </div>
+
+                        <div class="bluebox_data flex py-5 full_width">
+                            <div class="boxdata_left flex flex-col half_width">
+                                <span class="text-2xl text-center">8272</span>
+                                <span class="text-base text-center">Active</span>
+                            </div>
+                            <div class="boxdata_right flex flex-col half_width ">
+                                <span class="text-2xl text-center">25402</span>
+                                <span class="text-base text-center">Registered</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="seagreenbox flex-col less_quarter_width border_radius px-8 py-3 shadow-md bgColorWhite">
+                        <div class="box_head flex items-center">
+                            <span class="p-1 cart2 border_radius mr-2 comment_people"><img
+                                    src="Diamond_assets/comment_people.svg" alt=""></span>
+                            <span class=" bluebox_head_font4 text-lg">Comments</span>
+                        </div>
+
+                        <div class="bluebox_data flex py-5 full_width">
+                            <div class="boxdata_left flex flex-col half_width">
+                                <span class="text-2xl text-center">12</span>
+                                <span class="text-base text-center">New</span>
+                            </div>
+                            <div class="boxdata_right flex flex-col half_width ">
+                                <span class="text-2xl text-center">85</span>
+                                <span class="text-base text-center">Responded</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="Orders_recent_container flex full_width px-8 justify-between ">
+                    <div
+                        class="orders_graphs_container flex half_width bgColorWhite border_radius p-2 mr-4 flex-col shadow-2xl">
+
+                        <div class="order_graph_head flex justify-between cursor-pointer">
+                            <span class="text-2xl ml-2 mt-1">Orders able</span>
+                            <span
+                                class="flex bgColorWhite py-1 px-2 border_radius fontSize cursor-pointer mr-5 mt-4"><img
+                                    class="pr-2" src="Diamond_assets/show.svg" alt="">Show</span>
+
+                        </div>
+
+                        <div class="graphs_example_row flex  full_width mt-10 cursor-pointer ">
+                            <div
+                                class="graph_example new_example hover:shadow-md transition-transform quarter_width px-2 flex flex-col">
+                                <div class="plus_head flex pt-3 flex items-center"> <img class="plus"
+                                        src="Diamond_assets/plus.svg" alt="">New</div>
+
+                                <div class="plus_graph mt-4"><img src="Diamond_assets/asset 3.svg" alt=""></div>
+                            </div>
+                            <div
+                                class="graph_example completed_example hover:shadow-md transition-transform quarter_width px-2 flex flex-col cursor-pointer ">
+                                <div class="plus_head flex pt-3 flex items-center"> <img class="cross"
+                                        src="Diamond_assets/tick.svg" alt="">Completed</div>
+
+                                <div class="plus_graph mt-5"><img src="Diamond_assets/asset 4.svg" alt=""></div>
+                            </div>
+                            <div
+                                class="graph_example refunded_example hover:shadow-md quarter_width transition-transform px-2 flex flex-col cursor-pointer ">
+                                <div class="plus_head flex pt-3 flex items-center"> <img class="cross"
+                                        src="Diamond_assets/refresh.svg" alt="">Refunded</div>
+
+                                <div class="plus_graph mt-5"><img src="Diamond_assets/asset 5.svg" alt=""></div>
+                            </div>
+                            <div
+                                class="graph_example cancelled_example hover:shadow-md transition-transform quarter_width px-2 flex flex-col cursor-pointer">
+                                <div class="plus_head flex pt-3 flex items-center"> <img class="cross"
+                                        src="Diamond_assets/cross.svg" alt="">Cancelled</div>
+
+                                <div class="plus_graph mt-5"><img src="Diamond_assets/asset 6.svg" alt=""></div>
+                            </div>
+
+
+                        </div>
+
+
+                        <canvas class="graph px-4 pt-10 " id="newChart" width="100%" height="57vh"></canvas>
+
+
+                    </div>
+                    <div
+                        class="recent_sales_container flex half_width bgColorWhite border_radius p-2  flex-col shadow-2xl">
+                        <div class="order_graph_head flex  justify-between cursor-pointer">
+                            <div class="recent1 flex flex-col">
+                                <span class="text-2xl ml-2 mt-1">Recent Sales</span>
+                                <span class="p-2 mt-2 text-md recent_table_head">Your sales activity over time.</span>
+                            </div>
+
+                            <div class="recent2">
+
+                                <div class="week_btn mr-5 mt-2 border border_radius flex justify-center items-center">
+                                    <button class=" week  flex items-center p-2  fontSize cursor-pointer ">This Week
+                                    </button>
+                                    <span class=""><img class="pl-4" src="Diamond_assets/arrowdown.svg" alt=""></span>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="hidden_weeks  border_radius">
+                            <button
+                                class="week1 flex items-center  py-2 px-2 mt-2 full_width fontSize cursor-pointer mr-5">This
+                                Week</button>
+                            <button
+                                class="week2 flex items-center  py-2 px-2 full_width fontSize cursor-pointer mr-5 mb-2">Last
+                                Week</button>
+                        </div>
+
+                        <div class="recent_table_container">
+                            <table class="recent_table1 ml-5 text-lg mt-6">
+                                <tr class="text-left ml-2 h-10 font-light bluebox_data border-b">
+                                    <th class="flex h-10 items-center">ID <img src="Diamond_assets/exchange_arrow.svg"
+                                            alt=""></th>
+                                    <th>Category </th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th> </th>
+                                </tr>
+                                <tr class="h-16 border-b ">
+                                    <td>1000</td>
+                                    <td>Accessories</td>
+                                    <td>$65.00</td>
+                                    <td><button
+                                            class=" instock flex items-center justify-center border_radius text-sm">INSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+
+                                <tr class="h-16 border-b ">
+                                    <td>1001</td>
+                                    <td>Accessories</td>
+                                    <td>$72.00</td>
+                                    <td><button
+                                            class=" out_stock flex items-center justify-center border_radius text-sm">OUTOFSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+
+                                <tr class="h-16 border-b ">
+                                    <td>1002</td>
+                                    <td>Fitness</td>
+                                    <td>$79.00</td>
+                                    <td><button
+                                            class=" low_stock flex items-center justify-center border_radius text-sm">LOWSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+
+                                <tr class="h-16 border-b ">
+                                    <td>1003</td>
+                                    <td>Clothing</td>
+                                    <td>$29.00</td>
+                                    <td><button
+                                            class=" instock flex items-center justify-center border_radius text-sm">INSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+
+                                <tr class="h-16 border-b ">
+                                    <td>1004</td>
+                                    <td>Accessories</td>
+                                    <td>$15.00</td>
+                                    <td><button
+                                            class=" instock flex items-center justify-center border_radius text-sm">INSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+                            </table>
+
+                            <table class="recent_table2 ml-5 text-lg mt-6">
+                                <tr class="text-left ml-2 h-10 font-light bluebox_data border-b">
+                                    <th class="flex h-10 items-center">ID <img src="Diamond_assets/exchange_arrow.svg"
+                                            alt=""></th>
+                                    <th>Category </th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th> </th>
+                                </tr>
+                                <tr class="h-16 border-b ">
+                                    <td>1005</td>
+                                    <td>Accessories</td>
+                                    <td>$120.00</td>
+                                    <td><button
+                                            class=" out_stock flex items-center justify-center border_radius text-sm">OUTOFSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+
+                                <tr class="h-16 border-b ">
+                                    <td>1006</td>
+                                    <td>Accessories</td>
+                                    <td>$32.00</td>
+                                    <td><button
+                                            class=" low_stock flex items-center justify-center border_radius text-sm">LOWSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+
+                                <tr class="h-16 border-b ">
+                                    <td>1007</td>
+                                    <td>Fitness</td>
+                                    <td>$34.00</td>
+                                    <td><button
+                                            class=" instock flex items-center justify-center border_radius text-sm">INSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+
+                                <tr class="h-16 border-b ">
+                                    <td>1008</td>
+                                    <td>Electronics</td>
+                                    <td>$99.00</td>
+                                    <td><button
+                                            class=" low_stock flex items-center justify-center border_radius text-sm">LOWSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+
+                                <tr class="h-16 border-b ">
+                                    <td>1009</td>
+                                    <td>Electronics</td>
+                                    <td>$299.00</td>
+                                    <td><button
+                                            class=" instock flex items-center justify-center border_radius text-sm">INSTOCK</button>
+                                    </td>
+                                    <td class="text-right "><button
+                                            class="search mr-4 bg-blue-500 border_radius p-2"><img
+                                                src="Diamond_assets/recent_table_search.svg" alt=""></button></td>
+                                </tr>
+                            </table>
+
+                            <div class="toNfro full_width flex py-3 items-center justify-center gap-2">
+                                <img class="hover:bg-gray-100 bgColorWhite  w-8 h-8 previous"
+                                    src="Diamond_assets/double_arrow_left.svg" alt="">
+                                <button
+                                    class="hover:bg-gray-100 td w-8 m-1 h-8 bgColorWhite number1 number previous">1</button>
+                                <button
+                                    class="hover:bg-gray-100 td bgColorWhite w-8 m-1 number2 number h-8 previous ">2</button>
+                                <img class="hover:bg-gray-100 bgColorWhite  w-8 h-8 previous"
+                                    src="Diamond_assets/double_arrow_right.svg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="after_graph_section full_width flex justify-around mb-10">
+
+                <div class="after_graph_left border_radius w-1/3 mt-8">
+                    <div class="task_container border_radius shadow-2xl full_width  bgColorWhite p-2">
+                        <div class="recent1 flex flex-col">
+                            <span class="text-2xl ml-2 mt-1">Tasks</span>
+                            <span class="p-2 mt-2 text-md recent_table_head">Overview of your pending tasks</span>
+                        </div>
+
+
+                        <div class="task_bars flex flex-col gap-4 mb-5 ml-2">
+                            <label class="label ">12 Orders to fulfil</label>
+                            <progress class=" full_width firstbar  pt-0" id="file" value="55" max="100"> </progress>
+                            <label class="label">40+ Payments to withdraw</label>
+                            <progress class=" full_width firstbar secondbar pt-0" id="file" value="42" max="100">
+                            </progress>
+                            <label class="label">4 Reports to revise</label>
+                            <progress class=" full_width firstbar thirdbar pt-0" id="file" value="60" max="100">
+                            </progress>
+                            <label class="label">6 Questions to respond</label>
+                            <progress class=" full_width firstbar fourthbar pt-0" id="file" value="35" max="100">
+                            </progress>
+                            <label class="label">2 Chargebacks to review</label>
+                            <progress class=" full_width firstbar fifthbar pt-0" id="file" value="49" max="100">
+                            </progress>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="best_sellers border_radius shadow-2xl full_width  bgColorWhite p-2 mt-8 ">
+
+                        <div class="recent1 flex flex-col">
+                            <span class="text-2xl ml-2 mt-1">Best Sellers</span>
+                            <span class="p-2 mt-2 text-md recent_table_head">Most Popular products from your
+                                collection</span>
+                        </div>
+
+                        <table class="ml-2 text-lg mt-6 recent_table1">
+                            <tr class="text-left bgColor ml-2 h-12 font-light bluebox_data border-b">
+                                <th class="w-24">Product</th>
+                                <th></th>
+                                <th class="text-right pr-3">Sales</th>
+                            </tr>
+                            <tr class="text-left fontSize h-20 py-2 font-light bluebox_data border-b">
+                                <td><img class="table_img1 w-20 h-14" src="Diamond_assets/asset 7.jpeg" alt=""></td>
+                                <td class="fontSize text-lg">Bamboo Watch</td>
+                                <td class="text-right font-semibold text-xl pr-3">$65</td>
+                            </tr>
+
+                            <tr class="text-left fontSize h-20 py-2 font-light bluebox_data border-b">
+                                <td><img class="table_img1 w-20 h-14" src="Diamond_assets/asset 8.jpeg" alt=""></td>
+                                <td class="fontSize text-lg">Black Watch</td>
+                                <td class="text-right font-semibold text-xl pr-3">$72</td>
+                            </tr>
+
+                            <tr class="text-left fontSize h-20 py-2 font-light bluebox_data border-b">
+                                <td><img class="table_img1 w-20 h-14" src="Diamond_assets/asset 9.jpeg" alt=""></td>
+                                <td class="fontSize text-lg">Blue Band</td>
+                                <td class="text-right font-semibold text-xl pr-3">$79</td>
+                            </tr>
+
+                            <tr class="text-left fontSize h-20 py-2 font-light bluebox_data border-b">
+                                <td><img class="table_img1 w-20 h-14" src="Diamond_assets/asset 10.jpeg" alt=""></td>
+                                <td class="fontSize text-lg">Blue T-Shirt</td>
+                                <td class="text-right font-semibold text-xl pr-3">$29</td>
+                            </tr>
+
+                            <tr class="text-left fontSize h-20 py-2 font-light bluebox_data border-b">
+                                <td><img class="table_img1 w-20 h-14" src="Diamond_assets/asset 11.jpeg" alt=""></td>
+                                <td class="fontSize text-lg">Bracelet</td>
+                                <td class="text-right font-semibold text-xl pr-3">$15</td>
+                            </tr>
+
+                            <tr class="text-left fontSize h-20 py-2 font-light bluebox_data border-b">
+                                <td><img class="table_img1 w-20 h-14" src="Diamond_assets/asset 12.jpeg" alt=""></td>
+                                <td class="fontSize text-lg">Brown Purse</td>
+                                <td class="text-right font-semibold text-xl pr-3">$120</td>
+                            </tr>
+
+                            <tr class="text-left fontSize h-20 py-2 font-light bluebox_data mb-4">
+                                <td><img class="table_img1 w-20 h-14" src="Diamond_assets/asset 13.jpeg" alt=""></td>
+                                <td class="fontSize text-lg">Chakra Bracelet</td>
+                                <td class="text-right font-semibold text-xl pr-3">$32</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="after_graph_right bgColorWhite  w-7/12 mt-8 border_radius ">
+                    <div class="revenue_div bgColorWhite pb-7 border_radius shadow-2xl p-2">
+                        <div class="recent1 flex flex-col">
+                            <span class="text-2xl ml-2 mt-1">Revenue Stream</span>
+                            <span class="p-2 mt-2 text-md recent_table_head">Comparison of your revenue sources.</span>
+                        </div>
+
+                        <div class="piechart ml-44 mt-8 p-2 w-3/5 flex justify-center items-center bgColorWhite p-2">
+
+                            <canvas id="myPieChart" width="200" height="200"></canvas>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="revenue_div mt-8 bgColorWhite pb-7 shadow-2xl border_radius p-2">
+                        <div class="recent1 flex flex-col">
+                            <span class="text-2xl ml-2 mt-1">Team Members</span>
+
+                        </div>
+
+                        <div class="team_members_table  full_width mt-6 flex flex-col">
+
+                            <div class="member1 full_width  p-3 flex border-b">
+                                <div class="member1_left half_width flex items-center">
+                                    <img src="Diamond_assets/asset 14.png" alt="">
+                                    <div class="member_name ml-2 flex flex-col">
+                                        <span class="text-xl">Amy Elser</span>
+                                        <span class="text-sm ">Accounting</span>
+                                    </div>
+                                </div>
+                                <div class="member1_right half_width bgColorWhite flex justify-end gap-3">
+                                    <div
+                                        class="message bgColor flex justify-center items-center previous cursor-pointer instock">
+                                        <img src="Diamond_assets/message.svg" alt=""></div>
+                                    <div
+                                        class="message flex justify-center items-center previous cursor-pointer low_stock">
+                                        <img src="Diamond_assets/setting.svg" alt=""></div>
+                                </div>
+                            </div>
+
+                            <div class="member1 full_width px-3 py-6 flex border-b">
+                                <div class="member1_left  half_width  flex">
+                                    <img src="Diamond_assets/asset 15.png" alt="">
+                                    <div class="member_name ml-2 flex flex-col">
+                                        <span class="text-xl">Annal Fali</span>
+                                        <span class="text-sm ">Procurement</span>
+                                    </div>
+                                </div>
+                                <div class="member1_right half_width bgColorWhite flex justify-end gap-3">
+                                    <div
+                                        class="message bgColor flex justify-center items-center previous cursor-pointer instock">
+                                        <img src="Diamond_assets/message.svg" alt=""></div>
+                                    <div
+                                        class="message flex justify-center items-center previous cursor-pointer low_stock">
+                                        <img src="Diamond_assets/setting.svg" alt=""></div>
+                                </div>
+                            </div>
+
+                            <div class="member1 full_width px-3 py-6 flex border-b">
+                                <div class="member1_left  half_width  flex">
+                                    <img src="Diamond_assets/asset 16.png" alt="">
+                                    <div class="member_name ml-2 flex flex-col">
+                                        <span class="text-xl">Bernardo Dominic</span>
+                                        <span class="text-sm ">Finance</span>
+                                    </div>
+                                </div>
+                                <div class="member1_right half_width bgColorWhite flex justify-end gap-3">
+                                    <div
+                                        class="message bgColor flex justify-center items-center previous cursor-pointer instock">
+                                        <img src="Diamond_assets/message.svg" alt=""></div>
+                                    <div
+                                        class="message flex justify-center items-center previous cursor-pointer low_stock">
+                                        <img src="Diamond_assets/setting.svg" alt=""></div>
+                                </div>
+                            </div>
+
+                            <div class="member1 full_width px-3 py-6 flex border-b">
+                                <div class="member1_left  half_width  flex">
+                                    <img src="Diamond_assets/asset 17.png" alt="">
+                                    <div class="member_name ml-2 flex flex-col">
+                                        <span class="text-xl">Ivan Megalhaes</span>
+                                        <span class="text-sm ">Sales</span>
+                                    </div>
+                                </div>
+                                <div class="member1_right half_width bgColorWhite flex justify-end gap-3">
+                                    <div
+                                        class="message bgColor flex justify-center items-center previous cursor-pointer instock">
+                                        <img src="Diamond_assets/message.svg" alt=""></div>
+                                    <div
+                                        class="message flex justify-center items-center previous cursor-pointer low_stock">
+                                        <img src="Diamond_assets/setting.svg" alt=""></div>
+                                </div>
+                            </div>
+
+                            <div class="member1 full_width px-3 pt-6 pb-1 flex ">
+                                <div class="member1_left  half_width  flex">
+                                    <img src="Diamond_assets/asset 18.png" alt="">
+                                    <div class="member_name ml-2 flex flex-col">
+                                        <span class="text-xl">Amy Elser</span>
+                                        <span class="text-sm ">Accounting</span>
+                                    </div>
+                                </div>
+                                <div class="member1_right half_width bgColorWhite flex justify-end gap-3">
+                                    <div
+                                        class="message bgColor flex justify-center items-center previous cursor-pointer instock">
+                                        <img src="Diamond_assets/message.svg" alt=""></div>
+                                    <div
+                                        class="message  flex justify-center items-center previous cursor-pointer low_stock">
+                                        <img src="Diamond_assets/setting.svg" alt=""></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="footer full_width cart px-8 py-4 flex items-center">
+                <div class="left_foot half_width flex items-center">  <img  src="Diamond_assets/footer_logo.svg" alt="" width="24vw" height="14vh">
+                    <span class="diamond pl-2 text-lg">DIAMOND</span></div>
+              
+                    <div class="right_foot diamond half_width flex justify-end items-center">
+                        <span>	&#169; Your Organization - 2023 </span>
+                    </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    </div>
+
+
+
+    <div class="home_dropdown bgColor fixed border_radius  p-2 home_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">E-Commerce</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize"><img src="Diamond_assets/banking.svg"
+                alt="">Banking</span>
+    </div>
+
+    <div class="home_dropdown gallery_dropdown fixed galley bgColor border_radius  p-2 gallery_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Blogs</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Calender</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Chat</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Files</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Mail</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Task List</span>
+
+    </div>
+
+
+    <div class="home_dropdown star_dropdown fixed galley bgColor border_radius  p-2 star_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Form Layout</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Input</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Float Label</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Invalid State</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Button</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Table</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">List</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Tree</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Panel</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Overlay</span>
+
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Media</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Menu</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Message</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">File</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Chart</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Misc</span>
+    </div>
+
+
+    <div class="home_dropdown fixed  mask_dropdown bgColor border_radius  p-2 mask_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Free Blocks</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize"><img src="Diamond_assets/home2.svg"
+                alt="">All Blocks</span>
+    </div>
+
+
+    <div class="home_dropdown fixed compass_dropdown bgColor border_radius  p-2 compass_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">PrimeIcons</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize"><img src="Diamond_assets/home2.svg"
+                alt="">Colors</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize"><img src="Diamond_assets/home2.svg"
+                alt="">PrimeFlex</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize"><img src="Diamond_assets/home2.svg"
+                alt="">Figma</span>
+    </div>
+
+    <div class="home_dropdown fixed toolbox_dropdown galley bgColor border_radius  p-2 toolbox_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Landing</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Auth</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Crud</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Timeline</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Invoice</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">About Us</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Help</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Not Found</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Empty</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">FaQ</span>
+
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Contact Us</span>
+
+    </div>
+
+    <div class="home_dropdown fixed wallet_dropdown galley bgColor border_radius  p-2 wallet_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Product Overview</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Product List</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">New Product</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Shhopping Cart</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Checkout Form</span>
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Order History</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize">
+            <img src="Diamond_assets/banking.svg" alt="">Order Summary</span>
+
+
+
+    </div>
+
+    <div class="home_dropdown fixed bgColor profile_dropdown border_radius  p-2 profile_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">List </span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize"><img src="Diamond_assets/banking.svg"
+                alt="">Create</span>
+    </div>
+    <div class="home_dropdown fixed bgColor menu_dropdown border_radius  p-2 menu_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Submenu 1</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize"><img src="Diamond_assets/banking.svg"
+                alt="">Submenu 2</span>
+    </div>
+    <div class="home_dropdown fixed bgColor download_dropdown border_radius  p-2 download_down_position">
+        <span class="home_down_items border_radius flex items-center m-1 p-1 fontSize"><img
+                src="Diamond_assets/home2.svg" alt="">Buy Now</span>
+        <span class="home_down_items border_radius flex items-center p-1 fontSize"><img src="Diamond_assets/banking.svg"
+                alt="">Documentation</span>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

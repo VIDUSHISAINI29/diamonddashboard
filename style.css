@@ -1,0 +1,360 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    position: relative;
+}
+.grand_contaienr{
+    width: 100%;
+    height: 100vh;
+}
+.full_width{
+    width: 100%;
+}
+.half_width{
+    width: 50%;
+}
+.quarter_width{
+    width: 25%;
+}
+.less_quarter_width{
+   width: 23.5%;
+}
+.bgColor{
+    background-color: #343a40;
+}
+.bgColorWhite{
+    background-color: #fff;
+}
+.left_side_bar{
+    width: 4.9%;
+    align-items: center;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.fontSize{
+    font-size: 1.1vw;
+    color: #636e81;
+}
+.right_container{
+    /* background-color: rgb(135, 218, 241); */
+    width: 95.3%;
+}
+.left_bar_items{
+    height: 93vh;
+    gap: 2.6vh;
+}
+.left_bar_items span:nth-Child(1){
+    margin-top: 6vh;
+}
+.logo{
+    width: 39%;
+}
+.logo_div{
+    height: 7vh;
+    border-bottom: 0.1vw solid #636e81;
+}
+.left_bar_items span:hover{
+    background-color: #4b545c;
+}
+.left_bar_items span{
+    width: 55%;
+    border-radius: 0.5vw;
+    height: 4.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homebar{
+    padding: 0.25vw 2vw;
+    border-bottom: 0.1px solid #636e81;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.homebar_right{
+    gap: 1.2vw;
+    
+}
+.right_menu_color{
+    background-color: #eeefef;
+}
+.homebar_img{
+    width: 2.5vw;
+    height: 4.8vh;
+    border-top-left-radius: 0.3vw;
+    border-bottom-left-radius: 0.3vw;
+}
+.home_right_img_name{
+    padding: 4px 15px;
+    border-right: 0.1px solid #e9ecef;
+    border-left: 0.1px solid #e9ecef;
+}
+.radius_customize{
+    border-top-right-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+}
+.border_radius{
+    border-radius: 0.3vw;
+}
+.homebar_hover:hover{
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+.home_dropdown{
+    width: 14%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    display: none;
+    background-color: #30363c;
+    
+}
+.home_down_position{
+    top: 13.5vh;
+    left: 4.8vw;
+}
+.gallery_down_position{
+    top: 20vh;
+    left: 4.8vw;
+}
+.star_down_position{
+    top: 27vh;
+    left: 4.8vw;
+    height: 35vh;
+    overflow-y: auto;
+}
+.toolbox_down_position{
+    top: 48vh;
+    left: 4.8vw;
+    height: 35vh;
+    overflow-y: auto;
+}
+.mask_down_position{
+    top: 34vh;
+    left: 4.8vw;
+}
+.compass_down_position{
+    top: 41vh;
+    left: 4.8vw;
+}
+.wallet_down_position{
+    top: 56vh;
+    left: 4.8vw;
+}
+.menu_down_position{
+    top: 70vh;
+    left: 4.8vw;
+}
+.download_down_position{
+    top: 77vh;
+    left: 4.8vw;
+}
+.profile_down_position{
+    top: 63vh;
+    left: 4.8vw;
+}
+.home_down_items{
+    width: 90%;
+    color: #dbddde;
+}.home_down_items img{
+    padding-right: 0.6vw;
+    
+}
+.home_down_items:hover{
+    background-color: #4b545c;
+}
+.bluebox{
+    border-left: 4px solid #64b5f6;
+}
+.purplebox{
+    border-left: 4px solid #7986cb;
+}
+.greenbox{
+    border-left: 4px solid #4db6ac;
+}
+.seagreenbox{
+    border-left: 4px solid #4dd0e1;
+}
+.cart2{
+    background-color: #64b5f6;
+}
+.cart{
+    background-color: #e7e7e7;
+}
+.dollar{
+    background-color: #7986cb;
+}
+.bluebox_head_font{
+    color: #64b5f6;
+}
+.bluebox_head_font2{
+    color: #7986cb;
+}
+.bluebox_head_font3{
+    color: #4db6ac;
+}
+.bluebox_head_font4{
+    color: #4dd0e1;
+}
+.customer_people{
+    background-color: #4db6ac;
+}
+.comment_people{
+    background-color: #4dd0e1;
+}
+.boxdata_right{
+    border-left: 0.1px solid #e9ecef;
+}
+.bluebox_data {
+    color: #495057;
+}
+.hero_section{
+    background-color: #f8f9fa;
+}
+.order_graph_head span:nth-Child(2):hover{
+    background-color: #f9fafa;
+}
+.plus{
+    width: 1.4vw;
+    height: 3.6vh;
+}
+.cross{
+    width: 1.2vw;
+    height: 3.2vh;
+}
+.plus_head{
+    color: #495057;
+}
+.graph_example:hover{
+    transform: scale(1.01);
+}
+.orders_graphs_container{
+    height: 74vh;
+}
+.orders_graphs_container{
+    height: 74vh;
+}
+.recent_sales_container{
+    height: 70.5vh;
+}
+.hidden_weeks{
+    position: absolute;
+    top: 42vh;
+    left: 86.8vw;
+    width: 8.3%;
+    display: none;
+    z-index: 10000;
+    background-color: #fff;
+    transform: translateY(0);
+    box-shadow: 0px 0px 5px 2px #d8d8d8;
+}
+.recenet_sales_container{
+    position: relative;
+}
+.week_btn:hover{
+    border: 1px solid rgb(0, 149, 255);
+}
+.week1:hover, .week2:hover{
+    background-color: #e9ecef;
+}
+.hidden_weeks.active{
+    transition:  transform 0.5s ease;
+}
+.recent_table1, .recent_table2{
+    width: 96%;
+}
+th:hover{
+   background-color: #e9ecef; 
+}
+th{
+    background-color: #f8f9fa;
+}
+th, td{
+    padding-left: 1vw;
+}
+td, .td{
+    font-size: 2vh;
+    color: #636e81;
+}
+.instock{
+    background-color: #689f38;
+    width: 3.5vw;
+    height: 3vh;
+    color: #fff;
+}
+.low_stock{
+    background-color: #fbc02d;
+    width: 4.5vw;
+    height: 3vh;
+    color: #000;
+}
+.out_stock{
+    background-color: #d32f2f;
+    width: 5.2vw;
+    height: 3vh;
+    color: #fff;
+}
+.previous{
+    border-radius: 50%;
+}
+.number{
+    font-size: 1.2vw;
+    font-weight: 550;
+}
+.recent_table2{
+    display: none;
+}
+.firstbar{
+    height: 1vh;
+    appearance: none;
+}
+.firstbar::-webkit-progress-bar {
+    background-color: #dee2e6; /* Background of the progress bar */
+    border-radius: 12px;
+   
+}
+.firstbar::-webkit-progress-value {
+    background-color: #64b5f6; /* Color of the progress value */
+    border-radius: 12px 12px 12px 12px;
+}
+.secondbar::-webkit-progress-value {
+    background-color: #a5d6a7; /* Color of the progress value */
+    border-radius:  12px 12px 12px 12px;
+}
+.thirdbar::-webkit-progress-value {
+    background-color: #7986cb; /* Color of the progress value */
+    border-radius: 12px 12px 12px 12px;
+}
+.fourthbar::-webkit-progress-value {
+    background-color: #9575cd; /* Color of the progress value */
+    border-radius:  12px 12px 12px 12px;
+}
+.fifthbar::-webkit-progress-value {
+    background-color: #4db6ac; /* Color of the progress value */
+    border-radius: 12px 12px 12px 12px;
+}
+
+.recent_table_head{
+    color:#495057 ;
+}
+.label{
+    color: #495057;
+    font-weight: 550;
+}
+.message{
+    width: 2.5vw;
+    height: 4.8vh;
+}
+.diamond{
+    color: #262b2f;
+}
+
